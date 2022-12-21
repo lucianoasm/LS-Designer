@@ -1,0 +1,524 @@
+body {
+  background-color: #D0E8F2;
+  color: #40514E;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+p{
+  line-height: 2;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: #EAF6F6;
+  text-decoration: solid underline 3px;
+}
+
+h1 {
+  width: 50vw;
+  color: #1D2D50;
+  font-size: 8vw;
+  margin: auto;
+  font-family: 'Sacramento', cursive;
+  padding: 2vh;
+
+  animation: bounce;
+  animation-duration: 2s;
+}
+
+h1:hover{
+  width: 50vw;
+  color: #FFFFFF;
+  text-shadow: 5px 6px 9px #111;
+  font-size: 8vw;
+  margin: auto;
+  font-family: 'Sacramento', cursive;
+  padding: 2vh;
+  
+}
+
+h2 {
+  color: #1D2D50;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3vw;
+  font-weight: normal;
+  padding-bottom: 10px;
+
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h3 {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3:hover{
+  color: #EAF6F6;
+  text-shadow: 0.5px 0.5px 5px #000000;
+  font-size: 1.2em;
+}
+
+hr{
+  margin: 100px auto;
+  border-color: #79A3B1;
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 8px;
+  width: 10%;
+}
+
+
+.benm-vindo{
+  font-weight: bold;
+}
+
+.bem-vindo:hover{
+  font-weight: bold;
+  transform: translate(-50%,-50%);
+  color: #ffffff;
+  background: linear-gradient(to right, #1D2D50 0, white 10%, #1D2D50 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+}    
+@keyframes shine{
+  0%{
+    background-position: -20vw}
+  60%{
+    background-position: 1vw}
+  100%{
+    background-position: 18vw}
+}
+
+.topo {
+  padding-top: 15vh;
+  margin: 0;
+  background-color: #79A3B1;
+  position: relative;
+  height: 85vh;
+}
+
+.topo:hover{
+  background-image: url(../imagens/estrelas.png);
+  background-position: center center;
+  padding-top: 15vh;
+  margin: 0;
+  background-color: #79A3B1;
+  position: relative;
+  height: 85vh;
+
+  animation: estrela 120s ease-in-out infinite;
+}
+
+@keyframes estrela{
+  0%{
+    background-position: 0% 50%;
+
+  }
+  50%{
+    background-position: 50% 100%;
+
+  }
+  100%{
+    background-position: 0% 50%;
+
+  }
+}
+
+
+
+.home{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-align: left;
+}
+
+.inicio{
+  color: #1D2D50;
+  display: inline;
+  position: relative;
+  bottom: 15px;
+}
+
+.botão-home{
+  margin: 0;
+  position: relative;
+  width: 10%;
+}
+
+.botão-home:hover{
+  width: 9.8%;
+}
+
+.tudo {
+  background-color: gray;
+  width: 600px;
+  height: 600px;
+  position: relative;
+}
+
+.perfil{
+  margin: auto;
+  width: 50%;
+}
+
+.intro{
+  width: 60%;
+  margin: auto;
+}
+
+.video{
+  background-color: black;
+  margin: 100px auto 50px;
+  border-color: #79A3B1;
+  border-style: none;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 20px 0 #000000;
+}
+
+.luciano-img{
+  width: 15rem;
+}
+
+
+
+.camera{
+  width: 11vw;
+  padding-bottom: 25px;
+}
+
+.camera2{
+  position: absolute;
+  width: 11vw;
+  padding-bottom: 25px;
+  opacity: 0;
+}
+
+.camera2:hover{
+  opacity: 100;
+}
+
+.seta{
+  position: absolute;
+  bottom: 0px;
+  display: block;
+  margin: auto;
+  width: 3vw;
+
+  animation: bounce;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count:infinite;
+
+}
+
+.seta-center{
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.nuvem-baixo {
+  width: 6.5vw;
+  position: absolute;
+  left: 13vw;
+  top: 38vh;
+  
+  animation: esquerda-direita 30s linear forwards infinite alternate;
+}
+
+
+@keyframes esquerda-direita{
+  From{transform: translateX(0px);}
+  to{transform: translateX(65vw);}
+}
+.nuvem-topo {
+  width: 6.5vw;
+  position: absolute;
+  right: 0vw;
+  top: 8vh;
+
+
+  animation: direita-esquerda 30s linear forwards infinite alternate;
+}
+
+@keyframes direita-esquerda{
+  From{transform: translateX(0px);}
+  to{transform: translateX(-70vw);}
+}
+
+.escada2{
+  position: absolute;
+  bottom: 0px;
+  right: 10vw;
+  height: 35vw;
+}
+
+.escada{
+  position: absolute;
+  bottom: 0px;
+  left: 8vw;
+  height: 45vw;
+}
+
+.computer{
+  margin-right: 30px;
+  width: 25%;
+  float: left;
+}
+
+.computer-video{
+  margin-left: 30px;
+  width: 25%;
+  float: right;
+}
+
+.skill-row{
+  width: 55%;
+  margin: 100px auto;
+  text-align: left;
+
+}
+
+.container-meio{
+  margin: 100px 0;
+}
+
+.contate-me{
+  margin: auto;
+  width: 50%;
+}
+
+.info{
+  margin: 40px auto 60px;
+  width: 60%;
+}
+
+.container-final{
+  color: #EAF6F6;
+  background-color: #79A3B1;
+  margin: 30px auto 0;
+  padding: 20px;
+}
+
+.footer-link{
+  font-family: 'Montserrat', sans-serif;
+  color: #1E5F74;
+  margin: 10px 20px;
+}
+
+.direito-autoral{
+  font-size: 0.75rem;
+  padding: 30px 0 10px;
+}
+
+.BUTTON {
+   background: #11CDD4;
+   background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+   background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+   background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+   background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+   background-image: -webkit-gradient(to bottom, #11CDD4, #11999E);
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   color: #FFFFFF;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 20px;
+   font-weight: bold;
+   padding: 20px;
+   -webkit-box-shadow: 1px 1px 10px 0 #000000;
+   -moz-box-shadow: 1px 1px 10px 0 #000000;
+   box-shadow: 1px 1px 10px 0 #000000;
+   text-shadow: 1px 1px 20px #000000;
+   border: solid #16BFC5 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.BUTTON:hover {
+   border: solid #30E3CB 1px;
+   background: #30E3CB;
+   background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
+   background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
+   background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
+   background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
+   background-image: -webkit-gradient(to bottom, #30E3CB, #2BC4AD);
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   text-decoration: none;
+}
+
+.ensaio{
+  text-align: center;
+  min-height: 500px;
+  margin: auto;
+}
+
+.foto1{
+  width: 300px;
+  left: 25px;
+  margin: 100px 25px 0;
+  border-color: #79A3B1;
+  border-style: none;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 20px;
+
+}
+
+.foto2{
+  width: 300px;
+  margin: 100px 25px 0;
+  border-color: #79A3B1;
+  border-style: none;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 20px;
+
+}
+
+.foto3{
+  width: 490px;
+  right: 25px;
+  margin: 100px 25px 0;
+  border-color: #79A3B1;
+  border-style: none;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 20px;
+
+}
+
+
+.foto4{
+  width: 300px;
+  left: 25px;
+  margin: 100px 15px 0;
+  border-color: #79A3B1;
+  border-style: none;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 20px;
+
+}
+
+.foto5{
+  width: 550px;
+  right: 25px;
+  margin: 100px 25px 0;
+  border-color: #79A3B1;
+  border-style: none;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 20px;
+
+}
+
+.carrossel{
+  font-size: 2rem;
+}
+
+.post1{
+  width: 250px;
+  margin: 20px 0;
+
+}
+
+.post2{
+  width: 250px;
+  border-color: #79A3B1;
+  border-style: none;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px 0 #000000;
+}
+
+.cartao-visita{
+  width: 500px;
+  margin: 10px 25px;
+  border-color: #79A3B1;
+  border-style: none;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px 0 #000000;
+}
+
+.loading{
+  text-align: center;
+  margin: auto;
+}
+
+.carregando{
+  margin: auto;
+}
+
+.miner{
+  position: relative;
+  width: 100px;
+  top: 80px;
+
+}
+
+.redes-socias{
+  clear: both;
+  text-align: center;
+  margin: 50px auto;
+  padding-bottom: 100px;
+  width: 70%;
+}
+
+.insta1{
+  float: left;
+}
+
+.redes{
+  width: 10%;
+  float: left;
+}
+.insta2{
+  float: right;
+}
+
+.insta3{
+  float: right;
+  padding-left: 35px;
+}
+
+.redes2{
+  width: 10%;
+  float: right;
+}
+
+.whatsapp{
+  width: 9%;
+}
+
+.numero{
+  display: inline;
+  position: relative;
+  bottom: 60px;
+  font-weight: bolder;
+}
+
+.n889{
+  font-weight: lighter;
+}
